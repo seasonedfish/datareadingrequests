@@ -1,12 +1,12 @@
 # Data Reading Requests
-A client for Energize Andover's Building Energy API, with a focus on clarity and usability.
+A new client for Energize Andover's Building Energy API, with a focus on clarity and usability.
 
 ## Differences from building_data_requests
-Although datareadingrequests' function definitions are similar to those of building_data_requests,
-there are a few key differences between the two modules:
-- More intuitive `get_value()`. 
-Instead of a tuple, `get_value()` returns a DataReading namedtuple with fields `value` and `units`.
-- Predictable, single return type for `get_value()`.
+For compatibility, datareadingrequests' function definitions are similar to those of building_data_requests.
+However, there are a few key differences between the two modules:
+- datareadingrequests has a more intuitive `get_value()`. 
+Instead of a tuple, its `get_value()` returns a DataReading namedtuple with fields `value` and `units`.
+- datareadingrequests has a predictable, single return type for `get_value()`.
 With building_data_requests, `get_value()` could return a valid result or `None`.
 Here, it can only return a valid result; an exception will be thrown if the server returns no data.
 The reasoning for this is well-explained by williballenthin:
@@ -21,8 +21,9 @@ The reasoning for this is well-explained by williballenthin:
 > With the existing style, forgetting a `try/except` block is also a bug,
 > but when the exception is generated,
 > the programmer gets a very explicit stack trace with easy-to-find line number.
-- It's packaged!
+- datareadingrequests is packaged!
 You can install datareadingrequests with pip instead of manually copying a file.
+- datareadingrequests has no way (currently) to change hostname or port.
 
   
 ## Setup
