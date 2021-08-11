@@ -38,7 +38,7 @@ def get_bulk(bulk_request):
     response_dict = send_get_request({"bulk": json.dumps(bulk_request)}).json()
 
     for r in response_dict["rsp_list"]:
-        if r["success"] is False:
+        if not r["success"]:
             raise UnsuccessfulRequest(r["facility"], r["instance"])
 
     return response_dict
