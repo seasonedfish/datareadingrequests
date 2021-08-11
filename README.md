@@ -26,7 +26,7 @@ You can install datareadingrequests with pip instead of manually copying a file.
 
   
 ## Setup
-Use your favorite Python package manager, and do as you would with `pandas`, `matplotlib`, etc.
+Use your favorite Python package manager, and do as you would with pandas, matplotlib, etc.
 The only difference is that since the package is not published on PyPI,
 you must use the repository URL instead of just its name.
 
