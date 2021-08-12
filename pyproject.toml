@@ -3,6 +3,7 @@ name = "datareadingrequests"
 version = "0.1.0"
 description = ""
 authors = ["fisher <fisher521.fs@gmail.com>"]
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"
