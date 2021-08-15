@@ -27,7 +27,7 @@ class NoDataReading(UnsuccessfulRequest):
     """Raised when server returns no data reading"""
     def __init__(self, facility, instance):
         super().__init__(
-            f"The server returned no data reading for {facility} {instance}"
+            f"The server returned no data reading for \"{facility}\" \"{instance}\""
         )
 
 
