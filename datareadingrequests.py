@@ -39,7 +39,11 @@ def get_value(facility, instance, live=True) -> DataReading:
     if live:
         args[live] = True
 
-    instance_response = send_get_request(args).json()["instance_response"]
+    response = send_get_request(args)
+    try:
+        instance_response = response.json()["instance_response"]
+    except TypeError:
+        raise NoDataReading(facility, instance)
     if not instance_response["success"]:
         raise NoDataReading(facility, instance)
 
