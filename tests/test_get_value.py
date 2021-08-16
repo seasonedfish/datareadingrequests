@@ -1,5 +1,6 @@
-import datareadingrequests as drr
 import pytest
+
+import datareadingrequests as drr
 
 
 @pytest.mark.parametrize(
