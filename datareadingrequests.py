@@ -5,18 +5,18 @@ import requests
 
 
 class DataReading(typing.NamedTuple):
-    """A data reading from a meter, with value and units"""
+    """A data reading from a meter, with value and units."""
     value: float
     units: str
 
 
 class UnsuccessfulRequest(Exception):
-    """Raised when a request sent to the server is unsuccessful"""
+    """Raised when a request sent to the server is unsuccessful."""
     pass
 
 
 class NoResponseList(UnsuccessfulRequest):
-    """Raised when server returns no response list"""
+    """Raised when server returns no response list."""
     def __init__(self, bulk_request):
         super().__init__(
             f"The server returned no response list for {type(bulk_request)} bulk request"
@@ -24,7 +24,7 @@ class NoResponseList(UnsuccessfulRequest):
 
 
 class NoDataReading(UnsuccessfulRequest):
-    """Raised when server returns no data reading"""
+    """Raised when server returns no data reading."""
     def __init__(self, facility, instance):
         super().__init__(
             f"The server returned no data reading for \"{facility}\" \"{instance}\""
