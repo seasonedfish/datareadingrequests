@@ -1,4 +1,5 @@
 # Data Reading Requests
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/datareadingrequests)](https://pypi.org/project/datareadingrequests/)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tactlessfish/datareadingrequests/main)](https://github.com/tactlessfish/datareadingrequests/actions)
 [![Coveralls](https://img.shields.io/coveralls/github/tactlessfish/datareadingrequests)](https://coveralls.io/github/tactlessfish/datareadingrequests)
 
