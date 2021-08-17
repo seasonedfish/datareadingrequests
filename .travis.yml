@@ -5,6 +5,6 @@ python:
 before_install:
   - pip install poetry
 install:
-  - poetry install --dev
+  - poetry install
 script:
   - poetry run pytest
