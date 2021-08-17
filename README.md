@@ -25,6 +25,9 @@ The reasoning for this is well-explained by williballenthin:
 You can install datareadingrequests with pip instead of manually copying a file.
 - datareadingrequests has no way (currently) to change hostname or port.
 
+# Improvements
+- datareadingrequests has unit tests!
+- datareadingrequests is open source: it uses the MIT License.
   
 ## Setup
 Use your favorite Python package manager, and do as you would with pandas, matplotlib, etc.
