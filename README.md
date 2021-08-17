@@ -25,27 +25,25 @@ The reasoning for this is well-explained by williballenthin:
 > With the existing style, forgetting a `try/except` block is also a bug,
 > but when the exception is generated,
 > the programmer gets a very explicit stack trace with easy-to-find line number.
-- datareadingrequests is packaged!
-You can install datareadingrequests with pip instead of manually copying a file.
 - datareadingrequests has no way (currently) to change hostname or port.
 
 ## Improvements
 - datareadingrequests has unit tests!
-- datareadingrequests is open source: it uses the MIT License.
+- datareadingrequests is open source:
+it uses the MIT License.
+- datareadingrequests is packaged.
+You can install datareadingrequests with pip instead of manually copying a file.
   
 ## Setup
 Use your favorite Python package manager, and do as you would with pandas, matplotlib, etc.
-The only difference is that since the package is not published on PyPI,
-you must use the repository URL instead of just its name.
 
 Pip:
 ```
-pip install git+https://github.com/tactlessfish/datareadingrequests
-echo "git+https://github.com/tactlessfish/datareadingrequests@master" >> requirements.txt
+pip install datareadingrequests
+echo datareadingrequests >> requirements.txt
 ```
 
 Poetry:
 ```
-poetry add git:https://github.com/tactlessfish/datareadingrequests.git
+poetry add datareadingrequests
 ```
-
