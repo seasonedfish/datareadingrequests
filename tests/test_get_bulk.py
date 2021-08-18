@@ -1,5 +1,3 @@
-import numpy as np
-import pandas as pd
 import pytest
 
 import datareadingrequests as drr
@@ -10,9 +8,11 @@ def test_proper_input_works():
         {"facility": "ahs", "instance": "3001489", "label": "AHS 351 Temperature"},
         {"facility": "ahs", "instance": "3001477", "label": "AHS 351 CO2"}
     ]
-    response = drr.get_bulk(bulk_request)
-    df = pd.DataFrame(response["rsp_list"])
-    assert df["presentValue"].dtype == np.float64
+    bulk_response = drr.get_bulk(bulk_request)
+    assert all(
+        isinstance(specific_response["presentValue"], float)
+        for specific_response in bulk_response["rsp_list"]
+    )
 
 
 def test_non_iterable_input_raises_exception():
