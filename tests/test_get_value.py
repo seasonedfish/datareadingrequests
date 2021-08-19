@@ -14,14 +14,20 @@ def test_proper_input_works(test_instance, expected_units):
     assert data_reading.units == expected_units
 
 
-def test_proper_input_legacy_usage_works():
-    value, units = drr.get_value("ahs", 3007360)
+@pytest.mark.parametrize(
+    "test_instance, expected_units",
+    [("3007360", "kW"), (3007360, "kW")]
+)
+def test_proper_input_legacy_usage_works(test_instance, expected_units):
+    value, units = drr.get_value("ahs", test_instance)
     assert isinstance(value, float)
-    assert isinstance(units, str)
+    assert units == expected_units
 
 
-def test_improper_input_raises_exception():
+@pytest.mark.parametrize(
+    "test_instance, test_instance",
+    [("ahs", -1), ("", 3007360)]
+)
+def test_improper_input_raises_exception(test_facility, test_instance):
     with pytest.raises(drr.NoDataReading):
-        drr.get_value("ahs", -1)
-    with pytest.raises(drr.NoDataReading):
-        drr.get_value("", 3007360)
+        drr.get_value(test_facility, test_instance)
