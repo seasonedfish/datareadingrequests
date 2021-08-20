@@ -25,7 +25,7 @@ def test_proper_input_legacy_usage_works(test_instance, expected_units):
 
 
 @pytest.mark.parametrize(
-    "test_instance, test_instance",
+    "test_facility, test_instance",
     [("ahs", -1), ("", 3007360)]
 )
 def test_improper_input_raises_exception(test_facility, test_instance):
