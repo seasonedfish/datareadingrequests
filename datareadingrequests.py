@@ -5,9 +5,9 @@ import requests
 
 
 class DataReading(typing.NamedTuple):
-    """A data reading from a meter, with value and units."""
-    value: float
-    units: str
+    """A data reading from a meter, with a quantity and a unit."""
+    quantity: float
+    unit: str
 
 
 class UnsuccessfulRequest(Exception):
@@ -43,7 +43,7 @@ def get_value(facility, instance, live=True) -> DataReading:
     :param instance: The meter's number.
     :param live: (optional) Whether to get a live reading.
         By default, the function will get a cached reading.
-    :return: a DataReading named tuple consisting of (value, units).
+    :return: a DataReading named tuple consisting of (quantity, unit).
     """
     args = {
         "facility": facility,

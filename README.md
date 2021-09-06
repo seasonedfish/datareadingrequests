@@ -8,8 +8,9 @@ A new client for Energize Andover's Building Energy API, with a focus on clarity
 ## Differences from building_data_requests
 For compatibility, datareadingrequests' function definitions are similar to those of building_data_requests.
 However, there are a few key differences between the two modules:
-- datareadingrequests has a more intuitive `get_value()`. 
-Instead of a tuple, its `get_value()` returns a DataReading namedtuple with fields `value` and `units`.
+- Instead of a tuple, datareadingrequests' `get_value()` returns a DataReading namedtuple.
+This allows you to use the original tuple notation or the cleaner dot notation.
+Read more about namedtuples [here](https://realpython.com/python-namedtuple/).
 - datareadingrequests has a predictable, single return type for `get_value()`.
 With building_data_requests, `get_value()` could return a valid result or `None`.
 Here, it can only return a valid result; it raises an exception if the server returns no data.
