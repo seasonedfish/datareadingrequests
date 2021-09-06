@@ -3,7 +3,7 @@
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/tactlessfish/datareadingrequests/main)](https://github.com/tactlessfish/datareadingrequests/actions)
 [![Coveralls](https://img.shields.io/coveralls/github/tactlessfish/datareadingrequests)](https://coveralls.io/github/tactlessfish/datareadingrequests)
 
-A new client for Energize Andover's Building Energy API, with a focus on clarity and usability.
+A new client for Energize Andover's Building Energy Gateway, with a focus on clarity and usability.
 
 ## Differences from building_data_requests
 For compatibility, datareadingrequests' function definitions are similar to those of building_data_requests.
