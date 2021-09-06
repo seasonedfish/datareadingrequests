@@ -31,13 +31,13 @@ class NoDataReading(UnsuccessfulRequest):
         )
 
 
-def get_reading(facility, instance, live=True) -> DataReading:
+def get_value(facility, instance, live=True) -> DataReading:
     """
     Get the reading of a meter through Building Energy Gateway.
 
-    Although mostly compatible with building_data_requests' get_value(),
+    Although mostly compatible with building_data_requests' function of the same name,
     note that if the server returns no data,
-    get_reading will raise an exception.
+    datareadingrequests' version will raise an exception.
 
     :param facility: The facility in which the meter is located.
     :param instance: The meter's number.
