@@ -32,6 +32,19 @@ class NoDataReading(UnsuccessfulRequest):
 
 
 def get_value(facility, instance, live=True) -> DataReading:
+    """
+    Get the reading of a meter through Building Energy Gateway.
+
+    Although mostly compatible with building_data_requests' function of the same name,
+    note that if the server returns no data,
+    datareadingrequests' version will raise an exception.
+
+    :param facility: The facility in which the meter is located.
+    :param instance: The meter's number.
+    :param live: (optional) Whether to get a live reading.
+        By default, the function will get a cached reading.
+    :return: a DataReading named tuple consisting of (value, units).
+    """
     args = {
         "facility": facility,
         "instance": instance,
@@ -52,6 +65,20 @@ def get_value(facility, instance, live=True) -> DataReading:
 
 
 def get_bulk(bulk_request: typing.Iterable[typing.Dict]) -> typing.Dict:
+    """
+    Get readings in bulk from Building Energy Gateway.
+
+    Although mostly compatible with building_data_requests' function of the same name,
+    note that if the server returns no data for any specific instance,
+    datareadingrequests' version will raise an exception.
+
+    :param bulk_request: An iterable, with each item specifying one instance.
+        Each item should be a dictionary with keys "facility", "instance", and "label".
+        "label" is optional.
+    :return: A dictionary representing the server's JSON response.
+        Inside this dictionary is ["rsp_list"], a list of the readings.
+        ["rsp_list"] can be used to create a Pandas DataFrame.
+    """
     response = send_get_request({"bulk": json.dumps(bulk_request)})
     try:
         response_dict = response.json()
@@ -69,4 +96,14 @@ def get_bulk(bulk_request: typing.Iterable[typing.Dict]) -> typing.Dict:
 
 
 def send_get_request(args):
+    """
+    Send an HTTP GET request to Building Energy Gateway.
+
+    This is the datareadingrequests equivalent of
+    building_data_requests' post_request().
+    Note that it does not retry requests without SSL.
+
+    :param args: Arguments for the request.
+    :return: Response object.
+    """
     return requests.get("https://energize.andoverma.us", params=args)
