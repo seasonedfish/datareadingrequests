@@ -43,7 +43,7 @@ def get_value(facility, instance, live=True) -> DataReading:
     :param instance: The meter's number.
     :param live: (optional) Whether to get a live reading.
         By default, the function will get a cached reading.
-    :return: a DataReading named tuple consisting of (quantity, unit).
+    :return: a DataReading namedtuple consisting of (quantity, unit).
     """
     args = {
         "facility": facility,
