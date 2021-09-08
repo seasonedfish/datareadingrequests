@@ -26,7 +26,7 @@ jobs:
         poetry install
     - name: Test with pytest
       run: |
-        poetry run coverage run --include datareadingrequests.py -m pytest
+        poetry run pytest --cov=datareadingrequests
     - name: Upload coverage data to coveralls.io
       run: poetry run coveralls --service=github
       env:
