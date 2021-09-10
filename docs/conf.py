@@ -46,6 +46,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # unit titles (such as .. function::).
 add_module_names = True
 
+# Master doc
+master_doc = 'index'
+
 
 # -- Options for HTML output -------------------------------------------------
 

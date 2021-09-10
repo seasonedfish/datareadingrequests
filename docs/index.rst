@@ -6,13 +6,11 @@
 Welcome to datareadingrequests's documentation!
 ===============================================
 
-.. automodule:: datareadingrequests
-   :members:
-
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
+   api-reference
 
 
 Indices and tables
