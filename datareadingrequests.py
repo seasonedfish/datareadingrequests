@@ -90,7 +90,7 @@ def get_bulk(bulk_request: typing.Iterable[typing.Dict]) -> typing.Dict:
 
     for r in response_dict["rsp_list"]:
         if not r["success"]:
-            raise NoDataReading(r['facility'], r['instance'])
+            raise NoDataReading(r["facility"], r["instance"])
 
     return response_dict
 
