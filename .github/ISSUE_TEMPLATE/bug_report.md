@@ -14,14 +14,11 @@ Please fill in the following sections
 so that I can get a good understanding of it.
 -->
 
-## Description
-<!--- A short description of the bug. -->
+## Brief description
 
-## To reproduce
-<!--- Steps to reproduce the bug. -->
+## Steps to reproduce
 
 ## Expected behavior
-<!--- What you expected to happen. -->
 
 ## System information
  - OS and version: 
