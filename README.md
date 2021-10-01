@@ -5,7 +5,14 @@
 
 A new client for Energize Andover's Building Energy Gateway, with a focus on clarity and usability.
 
-## Differences from building_data_requests
+## Features
+- datareadingrequests is packaged!
+You can install it with pip instead of manually copying a file.
+- datareadingrequests is fully unit-tested.
+- datareadingrequests is open source:
+it uses the MIT License.
+
+## API Changes from building_data_requests
 For compatibility, datareadingrequests' function definitions are similar to those of building_data_requests.
 However, there are a few key differences between the two modules:
 - Instead of a tuple, datareadingrequests' `get_value()` returns a DataReading namedtuple.
@@ -30,13 +37,6 @@ The reasoning for this is well-explained by williballenthin:
 if the server returns no data for any specific instance.
 - datareadingrequests has no way (currently) to change hostname or port.
 - datareadingrequests does not retry requests without SSL.
-
-## Improvements
-- datareadingrequests is packaged!
-You can install datareadingrequests with pip instead of manually copying a file.
-- datareadingrequests has unit tests.
-- datareadingrequests is open source:
-it uses the MIT License.
   
 ## Setup
 Use your favorite Python package manager, and do as you would with pandas, matplotlib, etc.
