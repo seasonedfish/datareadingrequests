@@ -44,7 +44,7 @@ Use your favorite Python package manager, and do as you would with pandas, matpl
 Pip:
 ```
 pip install datareadingrequests
-echo datareadingrequests >> requirements.txt
+pip freeze > requirements.txt
 ```
 
 Poetry:
