@@ -14,16 +14,16 @@ Please fill in the following sections
 so that I can get a good understanding of it.
 -->
 
-### Description
+## Description
 <!--- A short description of the bug. -->
 
-### To reproduce
+## To reproduce
 <!--- Steps to reproduce the bug. -->
 
-### Expected behavior
+## Expected behavior
 <!--- What you expected to happen. -->
 
-### System information
+## System information
  - OS and version: 
  - Python version: 
  - datareadingrequests version: 
