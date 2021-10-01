@@ -8,21 +8,18 @@ assignees: ''
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+<!--- A short description of the bug. -->
 
-**To Reproduce**
-Steps to reproduce the behavior.
+**To reproduce**
+<!--- Steps to reproduce the bug. -->
 
 **Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+<!--- What you expected to happen. -->
 
 **System Information (please complete the following information):**
- - OS: [e.g. Ubuntu 20.04]
- - Python version: [e.g. 3.8.9]
- - datareadingrequests version [e.g. 1.0.1]
+ - OS: 
+ - Python version: 
+ - datareadingrequests version: 
 
 **Additional context**
-Add any other context about the problem here.
+<!--- Add any other context about the problem here. -->
