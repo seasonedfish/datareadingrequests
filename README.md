@@ -7,7 +7,7 @@ A new client for Energize Andover's Building Energy Gateway, with a focus on cla
 
 ## Features
 - datareadingrequests is packaged!
-You can install it with pip instead of manually copying a file.
+You can install it with pip (see [Setup](#setup)).
 - datareadingrequests is fully unit-tested.
 - datareadingrequests is open source:
 it uses the MIT License.
