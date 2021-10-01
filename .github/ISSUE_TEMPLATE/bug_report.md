@@ -7,6 +7,13 @@ assignees: ''
 
 ---
 
+<!---
+Thanks for finding and reporting a bug!
+
+Please fill in the following sections
+so that I can get a good understanding of it.
+-->
+
 ### Description
 <!--- A short description of the bug. -->
 
