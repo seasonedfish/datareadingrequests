@@ -1,25 +1,22 @@
 ---
 name: Bug report
-about: Something isn't working as expected.
+about: Something isn't working as expected
 title: ''
 labels: bug
 assignees: ''
 
 ---
 
-**Describe the bug**
+### Description
 <!--- A short description of the bug. -->
 
-**To reproduce**
+### To reproduce
 <!--- Steps to reproduce the bug. -->
 
-**Expected behavior**
+### Expected behavior
 <!--- What you expected to happen. -->
 
-**System Information (please complete the following information):**
- - OS: 
+### System information
+ - OS and version: 
  - Python version: 
  - datareadingrequests version: 
-
-**Additional context**
-<!--- Add any other context about the problem here. -->
