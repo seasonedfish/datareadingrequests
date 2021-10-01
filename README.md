@@ -40,7 +40,7 @@ if the server returns no data for any specific instance.
 ## Setup
 Use your favorite Python package manager, and do as you would with pandas, matplotlib, etc.
 
-Pip:
+pip:
 ```
 pip install datareadingrequests
 pip freeze > requirements.txt
