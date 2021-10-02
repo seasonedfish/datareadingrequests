@@ -1,28 +1,26 @@
 ---
 name: Bug report
-about: Create a report to help us improve
+about: Something isn't working as expected
 title: ''
 labels: bug
 assignees: ''
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+<!---
+Thanks for finding and reporting a bug!
 
-**To Reproduce**
-Steps to reproduce the behavior.
+Please fill in the following sections
+so that I can get a good understanding of it.
+-->
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+## Brief description
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+## Steps to reproduce
 
-**System Information (please complete the following information):**
- - OS: [e.g. Ubuntu 20.04]
- - Python version: [e.g. 3.8.9]
- - datareadingrequests version [e.g. 1.0.1]
+## Expected behavior
 
-**Additional context**
-Add any other context about the problem here.
+## System information
+ - OS and version: 
+ - Python version: 
+ - datareadingrequests version: 
