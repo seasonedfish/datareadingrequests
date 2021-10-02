@@ -13,9 +13,7 @@ Welcome to datareadingrequests's documentation!
    api-reference
 
 
-Indices and tables
-==================
+Other Pages
+------------------
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+* :ref:`Alphabetical Index<genindex>`
