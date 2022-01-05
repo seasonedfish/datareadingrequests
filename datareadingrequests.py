@@ -31,7 +31,7 @@ class NoDataReading(UnsuccessfulRequest):
         )
 
 
-def get_value(facility, instance, live=True) -> DataReading:
+def get_value(facility, instance, live=False) -> DataReading:
     """
     Get the reading of a meter through Building Energy Gateway.
 
