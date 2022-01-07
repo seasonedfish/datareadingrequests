@@ -50,7 +50,7 @@ def get_value(facility, instance, live=False) -> DataReading:
         "instance": instance,
     }
     if live:
-        args[live] = True
+        args["live"] = True
 
     response = send_get_request(args)
     try:
