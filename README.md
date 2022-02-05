@@ -5,6 +5,11 @@
 
 A new client for Energize Andover's Building Energy Gateway, with a focus on clarity and usability.
 
+## Notice 2022-01-07
+Tests are currently failing because there is something wrong with Building Energy Gateway's live feature.
+To be clear, this is **not** a datareadingrequests issue: the same thing occurs when you use building_data_requests.
+While we wait for this to be fixed, do not use `live=True`.
+
 ## Features
 - It's packaged, so you can install it with pip!
 - It's fully unit-tested.
